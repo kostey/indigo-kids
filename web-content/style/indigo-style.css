@@ -182,7 +182,7 @@ section {
     float: left;
 }
 
-section.left, section.right {
+section.left, section.left_1, section.right {
     margin-top: 3em;
     width: 6.25%
 }
@@ -246,7 +246,7 @@ nav.main{width: auto; }
 nav.lang{width: 8em; float: right}
 nav.sub {float: none; }
 
-nav.main li a {
+nav.main li a, nav.sub li a {
     font-size: 1.125em; line-height: 1.3333333333333333333333333333333em; margin-bottom: 1.3333333333333333333333333333333em ;
     text-decoration: none;
     text-wrap: none;
