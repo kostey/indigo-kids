@@ -59,9 +59,14 @@ p, blockquote, q, pre, address, code, samp, dl, ol, ul, form, table, fieldset, m
     text-shadow: none
 }
 
-body, button, input, select, textarea, h1, h2, h3, h4, h5, h6, ul, p b, nav li a {
+body, button, input, select, textarea, h1, h2, h3, h4, h5, h6, ul, p b, nav li a, a {
     color:#C2C2C2
 }
+
+a:hover {
+    color: #66CCFF;
+}
+
 body hr, footer hr {
     background-color: #C2C2C2;
 }
@@ -208,14 +213,28 @@ section.left_2, section.right_2 {
     padding-right: 12.5%;
 }
 
+.pull_4 {
+    padding-right: 25%;
+}
+
+section.margin_top {
+   margin-top: 3em;
+}
+
 section.content_14 {
-    margin-top: 3em;
+  /*  margin-top: 3em; */
     width: 87.5%;
 }
 
 section.content_13 {
-    margin-top: 3em;
+   /* margin-top: 3em;  */
     width: 81.25%;
+    float: left;
+}
+
+section.content_11 {
+   /* margin-top: 3em;*/
+    width: 68.25%;
     float: left;
 }
 
@@ -319,6 +338,16 @@ table td, table th {
 /* ===================
    LOGO, IMAGES
    =================== */
+
+
+figure.box {
+    display: inline;
+    float: left;
+    position: relative;
+    margin-left: 1%;
+    margin-right: 1%;
+    z-index: -1;
+}
 
 article figure.fly {
     position: absolute;

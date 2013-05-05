@@ -14,6 +14,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link href="../style/indigo-style.css" rel="stylesheet" />
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+    <script>
+        function initialize() {
+            var indig = new google.maps.LatLng(50.065137,14.416869);
+            var mapOptions = {
+                center: indig,
+                zoom: 14,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+
+            var map = new google.maps.Map(
+                    document.getElementById('map-canvas'), mapOptions);
+            var panoramaOptions = {
+                position: indig,
+                pov: {
+                    heading: 34,
+                    pitch: 10
+                }
+            };
+            var panorama = new  google.maps.StreetViewPanorama(document.getElementById('pano'),panoramaOptions);
+            map.setStreetView(panorama);
+        }
+
+        google.maps.event.addDomListener(window, 'load', initialize);
+
+    </script>
 </head>
 
 <body>
@@ -33,6 +59,7 @@
             <li><a href="pricelist.html">CENÍK</a></li>
             <li><a href="news.html">NOVINKY</a></li>
             <li><a href="gallery.html">FOTOGALERIE</a></li>
+            <li><a href="holidays.html">PRÁZDNINY</a></li>
         </ul>
     </nav>
     <nav class="lang">
@@ -46,11 +73,34 @@
 
 
 
-<section class="content_13 push_2 pull_1">
+<section class="content_13 push_2 pull_1 margin_top">
 
     <article class="g2">
         <p>
-            S nejvyšší pravděpodobností nás najdete na starém proboštství na Vyšehradě.
+            Indigo Kids<br/>
+            Štulcova 1<br/>
+            Praha 2 – Vyšehrad<br/>
+            128 00<br/>
+            www.indigo-kids.cz<br/>
+            e-mail: skolka@indigo-kids.cz<br/>
+            <div id="map-canvas" style="width: 400px; height: 300px"></div>
+            <div id="pano" style="width: 400px; height: 300px;"></div>
+
+        </p><p>
+            Ředitelka školky<br/>
+            Irena Hanušová<br/>
+            Tel: 775242302<br/>
+            e-mail: irena@indigo-kids.cz<br/>
+        </p><p>
+            Asistentka<br/>
+            Taťána Votavová<br/>
+            Tel: 776085013<br/>
+            e-mail: tana@indigo-kids.cz<br/>
+        </p><p>
+            MAPA<br/>
+            PARKOVÁNÍ<br/>
+            Pro rodiče máme povolení k vjezdu a parkovací místa přímo u školky.<br/>
+
         </p>
     </article>
 
