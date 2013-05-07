@@ -2,7 +2,18 @@
 @import url("http://fonts.googleapis.com/css?family=Open+Sans:400&subset=all");
 @import "reset.css";
 
-/* indigo v01 */
+/* indigo v01
+ 
+ Barvy:
+  Text:
+   kunetik prvni navrh: #CCCCCC
+   moje prvni opt: #C2C2C2
+   moje druha opt: #999999
+  Tyrkys:
+   #66CCFF  (102, 204, 255)
+  Bordery: #CCCCCC 
+ 
+ */
 
 /* HTML5 DECLARATIONS */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, dialog {display: block}
@@ -44,10 +55,7 @@ p, blockquote, q, pre, address, code, samp, dl, ol, ul, form, table, fieldset, m
     padding: 0
 }
 
-/* ===================
-   BRVY #B2B2B2 #C2C2C2 #CCCCCC
-   #66CCFF (102, 204, 255)
-   =================== */
+
 
 ::-moz-selection {
     background: #66CCFF;
@@ -61,7 +69,7 @@ p, blockquote, q, pre, address, code, samp, dl, ol, ul, form, table, fieldset, m
 }
 
 body, button, input, select, textarea, h1, h2, h3, h4, h5, h6, ul, p b, nav li a, a {
-    color:#C2C2C2
+    color:#999999
 }
 
 a:hover {
@@ -69,11 +77,11 @@ a:hover {
 }
 
 body hr, footer hr {
-    background-color: #C2C2C2;
+    background-color: #999999;
 }
 
 nav li {
-    border-color: #C2C2C2;
+    border-color: #999999;
 }
 nav a.active, nav li a:hover {
     /* text-decoration: underline;*/
@@ -190,7 +198,7 @@ section {
 
 section.left, section.left_1, section.right {
     margin-top: 3em;
-    width: 6.25%
+    width: 6.25%; min-width: 3em;
 }
 
 section.left_2, section.right_2 {
@@ -367,11 +375,11 @@ article figure.team {
 }
 
 header figure.logo_small {
-    width:3em;
-    height:3em;
+    width:50px;
+    height:50px;
     margin-top: -1em;
     background-repeat: no-repeat;
-    background-image: url('../img/logo/logo_small.png');
+    background-image: url('../img/logo/logo_50x50.png');
     background-size: contain;
     background-position: center;
     display:inline;
