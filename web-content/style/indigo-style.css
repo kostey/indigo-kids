@@ -417,6 +417,90 @@ footer figure img {
 
 }
 
+/* ============= */
+/* FADING BANNER */
+/* ============= */
+
+#banner1 {
+    position:relative;
+    float: left;
+    height:228px;
+    width:860px;
+    margin-bottom: 3em;
+}
+
+#banner1 img {
+  position:absolute;
+  left:0;
+    /*
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+  */
+}
+
+@-webkit-keyframes banner1FadeInOut {
+    0%   { opacity:1; }
+    45%  { opacity:1; }
+    55%  { opacity:0; }
+    100% { opacity:0; }
+}
+
+@-o-keyframes banner1FadeInOut {
+    0%   { opacity:1; }
+    45%  { opacity:1; }
+    55%  { opacity:0; }
+    100% { opacity:0; }
+}
+
+@-moz-keyframes banner1FadeInOut {
+    0%   { opacity:1; }
+    45%  { opacity:1; }
+    55%  { opacity:0; }
+    100% { opacity:0; }
+}
+
+@-ms-keyframes banner1FadeInOut {
+    0%   { opacity:1; }
+    45%  { opacity:1; }
+    55%  { opacity:0; }
+    100% { opacity:0; }
+}
+
+@keyframes banner1FadeInOut {
+    0%   { opacity:1; }
+    45%  { opacity:1; }
+    55%  { opacity:0; }
+    100% { opacity:0; }
+}
+
+#banner1 img.banner_top {
+    -webkit-animation-name: banner1FadeInOut;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-direction: alternate;
+
+    -moz-animation-name: banner1FadeInOut;
+    -moz-animation-timing-function: ease-in-out;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-duration: 5s;
+    -moz-animation-direction: alternate;
+
+    -o-animation-name: banner1FadeInOut;
+    -o-animation-timing-function: ease-in-out;
+    -o-animation-iteration-count: infinite;
+    -o-animation-duration: 5s;
+    -o-animation-direction: alternate;
+
+    animation-name: banner1FadeInOut;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-direction: alternate;
+}
+
 
 /* media Queries
 
