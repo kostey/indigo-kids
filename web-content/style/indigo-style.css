@@ -12,7 +12,12 @@
   Tyrkys:
    #66CCFF  (102, 204, 255)
   Bordery: #CCCCCC 
- 
+
+ 12.8.2013 - predelavka:
+   ruzovka (nadpisy): #f97fc4
+   modra (nadpisy): #0090ce
+   menu, text: #666666
+
  */
 
 /* HTML5 DECLARATIONS */
@@ -58,34 +63,41 @@ p, blockquote, q, pre, address, code, samp, dl, ol, ul, form, table, fieldset, m
 
 
 ::-moz-selection {
-    background: #66CCFF;
+    background: #0090ce;
     color: #fff;
     text-shadow: none
 }
 ::selection {
-    background: #66CCFF;
+    background: #0090ce;
     color: #fff;
     text-shadow: none
 }
 
-body, button, input, select, textarea, h1, h2, h3, h4, h5, h6, ul, p b, nav li a, a {
-    color:#999999
+body, button, input, select, textarea, h1, h3, h4, h5, h6, ul, p b, nav li a, a {
+    color:#666666
 }
 
+article b, .h3 {
+    color: #f97fc4;
+}
+
+h2, h3 {
+    color: #0090ce
+}
 a:hover {
-    color: #66CCFF;
+    color: #0090ce;
 }
 
 body hr, footer hr {
-    background-color: #999999;
+    background-color: #666666;
 }
 
 nav li {
-    border-color: #999999;
+    border-color: #666666;
 }
 nav a.active, nav li a:hover {
     /* text-decoration: underline;*/
-    color: #66CCFF;
+    color: #0090ce;
     font-weight: 600;
     letter-spacing: -0.1em
 }
